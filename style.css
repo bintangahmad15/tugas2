@@ -17,7 +17,7 @@ body {
 
 .sidebar {
     width: 250px;
-    background-color: #f0f0f0;
+    background-color: #eee;
     padding: 20px;
     border-right: 1px solid #ddd;
 }
@@ -25,6 +25,7 @@ body {
 .sidebar h2 {
     margin-top: 0;
     color: #555;
+    margin-bottom: 15px;
 }
 
 .outline {
@@ -36,74 +37,46 @@ body {
     margin-bottom: 10px;
 }
 
-.outline a {
-    text-decoration: none;
-    color: #007bff;
+.outline li a {
     display: block;
+    text-decoration: none;
+    color: #337ab7;
     padding: 8px 10px;
-    border-radius: 5px;
+    border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
-.outline a:hover {
-    background-color: #e9ecef;
+.outline li a:hover {
+    background-color: #ddd;
 }
 
-.main-content {
+.article {
     flex: 1;
-    padding: 20px;
+    padding: 30px;
 }
 
-.main-content h2 {
+.article h1 {
     color: #333;
+    margin-bottom: 25px;
     border-bottom: 2px solid #ccc;
     padding-bottom: 10px;
-    margin-top: 0;
+}
+
+.article h2 {
+    color: #555;
+    margin-top: 20px;
     margin-bottom: 15px;
 }
 
-.main-content img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+.article section {
+    margin-bottom: 30px;
 }
 
-.main-content p {
+.article section:last-child {
+    margin-bottom: 0;
+}
+
+.article p {
     line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.main-content a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.main-content a:hover {
-    color: #0056b3;
-}
-
-/* Responsive layout */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-    .sidebar {
-        width: 100%;
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-        margin-bottom: 20px;
-    }
-    .outline {
-        display: flex;
-        overflow-x: auto;
-        padding: 10px 0;
-    }
-    .outline li {
-        margin-right: 15px;
-        margin-bottom: 0;
-    }
+    color: #444;
 }
