@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    margin: 20px;
+}
+
+.sidebar {
+    width: 200px;
+    margin-right: 20px;
+    border-right: 1px solid #ccc;
+    padding-right: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.article {
+    flex-grow: 1;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    margin-top: 0;
+}
